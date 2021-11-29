@@ -1,0 +1,89 @@
+
+
+<%- include('include/_header') %>
+
+
+  
+    <main id="site-main">
+        <div class="container">
+            <div class="box-nav d-flex justify-between">
+            <div class="filter">
+                <a href="/">
+                    <span class="text-gradient">Back to Student's Marks Record.<i class="fas fa-user"></i></span>
+                </a>
+            </div>
+            </div>
+            <div class="form-title text-center">
+                <h2 class="text-dark">Update Marks</h2>
+                
+            </div>
+
+        
+         
+ <form method="POST" id="update_user">
+    <div class="new_user">
+        <div class="form-group">
+            <label for="name" class="text-light">roll_no</label>
+            <input type="hidden" name="id" value="<%= user._id %>">
+            <input type="number" name="roll_no" value="<%= user.roll_no %>" placeholder="0000000" required>
+        </div>
+        <div class="form-group">
+            <label for="name" class="text-light">Name</label>
+            <input type="hidden" name="id" value="<%= user._id %>">
+            <input type="text" name="name" value="<%= user.name %>" placeholder="NIT-JAMSHEDPUR" required> 
+        </div>
+        <div class="form-group">
+            <label for="Semester" class="text-light">sem</label>
+            <input type="number" name="sem" value="<%= user.sem %>" placeholder="semester" required min=1 max=6>
+        </div>
+        <div class="form-group">
+            <label for="DBMS" class="text-light">DBMS</label>
+            <input type="hidden" name="id" value="<%= user._id %>">
+            <input type="number" name="DBMS" value="<%= user.DBMS %>" placeholder="0-100" required min=0 max=100>
+        </div>
+        <div class="form-group">
+            <label for="CNCC" class="text-light">CNCC</label>
+            <input type="hidden" name="id" value="<%= user._id %>">
+            <input type="number" name="CNCC" value="<%= user.CNCC %>" placeholder="0-100" required min=0 max=100>
+        </div>
+        <div class="form-group">
+            <label for="DAA" class="text-light">DAA</label>
+            <input type="hidden" name="id" value="<%= user._id %>">
+            <input type="number" name="DAA" value="<%= user.DAA %>" placeholder="0-100" required min=0 max=100>
+        </div>
+        <div class="form-group">
+            <label for="CG" class="text-light">CG</label>
+            <input type="hidden" name="id" value="<%= user._id %>">
+            <input type="number" name="CG" value="<%= user.CG %>" placeholder="0-100" required min=0 max=100>
+        </div>
+        <div class="form-group">
+            <label for="JAVA" class="text-light">JAVA</label>
+            <input type="hidden" name="id" value="<%= user._id %>">
+            <input type="number" name="JAVA" value="<%= user.JAVA %>" placeholder="0-100" required min=0 max=100>
+        </div>
+        <div class="form-group">
+            <label for="DBMS_LAB" class="text-light">DBMS_LAB</label>
+            <input type="hidden" name="id" value="<%= user._id %>">
+            <input type="number" name="DBMS_LAB" value="<%= user.DBMS_LAB %>" placeholder="0-100" required min=0 max=100>
+        </div>
+        <div class="form-group">
+            <label for="CG_JV_LAB" class="text-light">CG_JV_LAB</label>
+            <input type="hidden" name="id" value="<%= user._id %>">
+            <input type="number" name="CG_JV_LAB" value="<%= user.CG_JV_LAB %>" placeholder="0-100" required min=0 max=100>
+        </div>
+       
+       
+      
+
+        <div class="form-group">
+            <button type="submit" class="btn text-light update">Save</button>
+        </div>
+
+    </div>
+</form>
+       
+    </div>
+</main>
+
+<%- include('include/_footer') %>
+

@@ -1,0 +1,41 @@
+
+    <%- include('include/_header') %>
+
+    <main id="site-main">
+        <div class="container">
+            <div class="box-nav d-flex justify-between">
+                <a href="/add-user" class="border-shadow">
+                    <span class="text-gradient" id = "adding_user">Add new Student's Marks.<i class="fas fa-user"></i></span>
+                </a>
+            </div>
+
+           
+            <form action="/" method="POST">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>ID</th>
+                            <th>ROLL_NO</th>
+                            <th>NAME</th>
+                            <th>SEM</th>
+                            <th>DBMS</th>
+                            <th>CNCC</th>
+                            <th>DAA</th>
+                            <th>CG</th>
+                            <th>JAVA</th>
+                            <th>DBMS_LAB</th>
+                            <th>CG_JV_LAB</th>
+                            <th>TOTAL_M_M</th>
+                            <th>TOTAL_O_M</th>
+
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <%- include('include/_show') %>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </main>
+<%- include('include/_footer') %>

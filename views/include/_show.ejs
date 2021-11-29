@@ -1,0 +1,27 @@
+<% for(var i = 0; i < users.length; i++) { %>
+<tr>
+    <td><%= i + 1 %></td>
+    <td><%= users[i].roll_no %></td>
+    <td><%= users[i].name %></td>
+    <td><%= users[i].sem %></td>
+    <td><%= users[i].DBMS %></td>
+    <td><%= users[i].CNCC %></td>
+    <td><%= users[i].DAA %></td>
+    <td><%= users[i].CG %></td>
+    <td><%= users[i].JAVA %></td>
+    <td><%= users[i].DBMS_LAB %></td>
+    <td><%= users[i].CG_JV_LAB %></td>
+    <td><%= users[i].TOTAL_M_M %></td>
+    <td><%= users[i].TOTAL_O_M %></td>
+    
+
+    <td>
+        <a href="/update-user?id=<%= users[i]._id%>" class="btn border-shadow update">
+            <span class="text-gradient">edit</span>
+        </a>
+        <a class="btn border-shadow delete" data-id=<%= users[i]._id%> >
+            <span class="text-gradient">delete</span>
+        </a>
+    </td>
+</tr>
+<% } %>
